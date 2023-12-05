@@ -33,6 +33,7 @@ enum Router: URLRequestConvertible {
 
 final class NetworkClient {
     
+    // 1
     let evaluators = [
         "api.stackexchange.com":
             PinnedCertificatesTrustEvaluator(certificates: [

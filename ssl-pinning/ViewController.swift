@@ -27,7 +27,15 @@ class ViewController: UIViewController {
                 case .success(let value):
                     self.users = value.users
                 case .failure(let error):
-                    self.presentError(withTitle: "Oops!", message: error.localizedDescription)
+                    let isServerTrustEvaluationError =
+                    error.asAFError?.isServerTrustEvaluationError ?? false
+                    let message: String
+                    if isServerTrustEvaluationError {
+                        message = "Certificate Pinning Error"
+                    } else {
+                        message = error.localizedDescription
+                    }
+                    self.presentError(withTitle: "Oops!", message: message)
                 }
             }
     }
