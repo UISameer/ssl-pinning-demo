@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC55A21A2B1F700900184C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55A2192B1F700900184C92 /* AppDelegate.swift */; };
+		DC55A21C2B1F700900184C92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55A21B2B1F700900184C92 /* SceneDelegate.swift */; };
+		DC55A21E2B1F700900184C92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55A21D2B1F700900184C92 /* ViewController.swift */; };
+		DC55A2212B1F700900184C92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC55A21F2B1F700900184C92 /* Main.storyboard */; };
+		DC55A2232B1F700C00184C92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC55A2222B1F700C00184C92 /* Assets.xcassets */; };
+		DC55A2262B1F700C00184C92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC55A2242B1F700C00184C92 /* LaunchScreen.storyboard */; };
+		DC55A2312B1F700C00184C92 /* ssl_pinningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55A2302B1F700C00184C92 /* ssl_pinningTests.swift */; };
+		DC55A23B2B1F700C00184C92 /* ssl_pinningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55A23A2B1F700C00184C92 /* ssl_pinningUITests.swift */; };
+		DC55A23D2B1F700C00184C92 /* ssl_pinningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55A23C2B1F700C00184C92 /* ssl_pinningUITestsLaunchTests.swift */; };
+		DC55A24C2B1F71A500184C92 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DC55A24B2B1F71A500184C92 /* Alamofire */; };
+		DC55A24F2B1F72FE00184C92 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55A24E2B1F72FE00184C92 /* NetworkClient.swift */; };
+		DC55A2522B1F73F900184C92 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55A2512B1F73F900184C92 /* DetailViewController.swift */; };
+		DC55A2542B1F740D00184C92 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55A2532B1F740D00184C92 /* Model.swift */; };
+		DC55A2592B1F781100184C92 /* stackexchange.com.cer in Resources */ = {isa = PBXBuildFile; fileRef = DC55A2582B1F77F400184C92 /* stackexchange.com.cer */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC55A22D2B1F700C00184C92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC55A20E2B1F700900184C92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC55A2152B1F700900184C92;
+			remoteInfo = "ssl-pinning";
+		};
+		DC55A2372B1F700C00184C92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC55A20E2B1F700900184C92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC55A2152B1F700900184C92;
+			remoteInfo = "ssl-pinning";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC55A2162B1F700900184C92 /* ssl-pinning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ssl-pinning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC55A2192B1F700900184C92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC55A21B2B1F700900184C92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC55A21D2B1F700900184C92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC55A2202B1F700900184C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC55A2222B1F700C00184C92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC55A2252B1F700C00184C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC55A2272B1F700C00184C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC55A22C2B1F700C00184C92 /* ssl-pinningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ssl-pinningTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC55A2302B1F700C00184C92 /* ssl_pinningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ssl_pinningTests.swift; sourceTree = "<group>"; };
+		DC55A2362B1F700C00184C92 /* ssl-pinningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ssl-pinningUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC55A23A2B1F700C00184C92 /* ssl_pinningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ssl_pinningUITests.swift; sourceTree = "<group>"; };
+		DC55A23C2B1F700C00184C92 /* ssl_pinningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ssl_pinningUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC55A24E2B1F72FE00184C92 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		DC55A2512B1F73F900184C92 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DC55A2532B1F740D00184C92 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DC55A2582B1F77F400184C92 /* stackexchange.com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = stackexchange.com.cer; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC55A2132B1F700900184C92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC55A24C2B1F71A500184C92 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC55A2292B1F700C00184C92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC55A2332B1F700C00184C92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC55A20D2B1F700900184C92 = {
+			isa = PBXGroup;
+			children = (
+				DC55A2182B1F700900184C92 /* ssl-pinning */,
+				DC55A22F2B1F700C00184C92 /* ssl-pinningTests */,
+				DC55A2392B1F700C00184C92 /* ssl-pinningUITests */,
+				DC55A2172B1F700900184C92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC55A2172B1F700900184C92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC55A2162B1F700900184C92 /* ssl-pinning.app */,
+				DC55A22C2B1F700C00184C92 /* ssl-pinningTests.xctest */,
+				DC55A2362B1F700C00184C92 /* ssl-pinningUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC55A2182B1F700900184C92 /* ssl-pinning */ = {
+			isa = PBXGroup;
+			children = (
+				DC55A2192B1F700900184C92 /* AppDelegate.swift */,
+				DC55A21B2B1F700900184C92 /* SceneDelegate.swift */,
+				DC55A2582B1F77F400184C92 /* stackexchange.com.cer */,
+				DC55A21D2B1F700900184C92 /* ViewController.swift */,
+				DC55A21F2B1F700900184C92 /* Main.storyboard */,
+				DC55A2222B1F700C00184C92 /* Assets.xcassets */,
+				DC55A2242B1F700C00184C92 /* LaunchScreen.storyboard */,
+				DC55A2272B1F700C00184C92 /* Info.plist */,
+				DC55A24E2B1F72FE00184C92 /* NetworkClient.swift */,
+				DC55A2512B1F73F900184C92 /* DetailViewController.swift */,
+				DC55A2532B1F740D00184C92 /* Model.swift */,
+			);
+			path = "ssl-pinning";
+			sourceTree = "<group>";
+		};
+		DC55A22F2B1F700C00184C92 /* ssl-pinningTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC55A2302B1F700C00184C92 /* ssl_pinningTests.swift */,
+			);
+			path = "ssl-pinningTests";
+			sourceTree = "<group>";
+		};
+		DC55A2392B1F700C00184C92 /* ssl-pinningUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC55A23A2B1F700C00184C92 /* ssl_pinningUITests.swift */,
+				DC55A23C2B1F700C00184C92 /* ssl_pinningUITestsLaunchTests.swift */,
+			);
+			path = "ssl-pinningUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC55A2152B1F700900184C92 /* ssl-pinning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC55A2402B1F700C00184C92 /* Build configuration list for PBXNativeTarget "ssl-pinning" */;
+			buildPhases = (
+				DC55A2122B1F700900184C92 /* Sources */,
+				DC55A2132B1F700900184C92 /* Frameworks */,
+				DC55A2142B1F700900184C92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ssl-pinning";
+			packageProductDependencies = (
+				DC55A24B2B1F71A500184C92 /* Alamofire */,
+			);
+			productName = "ssl-pinning";
+			productReference = DC55A2162B1F700900184C92 /* ssl-pinning.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC55A22B2B1F700C00184C92 /* ssl-pinningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC55A2432B1F700C00184C92 /* Build configuration list for PBXNativeTarget "ssl-pinningTests" */;
+			buildPhases = (
+				DC55A2282B1F700C00184C92 /* Sources */,
+				DC55A2292B1F700C00184C92 /* Frameworks */,
+				DC55A22A2B1F700C00184C92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC55A22E2B1F700C00184C92 /* PBXTargetDependency */,
+			);
+			name = "ssl-pinningTests";
+			productName = "ssl-pinningTests";
+			productReference = DC55A22C2B1F700C00184C92 /* ssl-pinningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC55A2352B1F700C00184C92 /* ssl-pinningUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC55A2462B1F700C00184C92 /* Build configuration list for PBXNativeTarget "ssl-pinningUITests" */;
+			buildPhases = (
+				DC55A2322B1F700C00184C92 /* Sources */,
+				DC55A2332B1F700C00184C92 /* Frameworks */,
+				DC55A2342B1F700C00184C92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC55A2382B1F700C00184C92 /* PBXTargetDependency */,
+			);
+			name = "ssl-pinningUITests";
+			productName = "ssl-pinningUITests";
+			productReference = DC55A2362B1F700C00184C92 /* ssl-pinningUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC55A20E2B1F700900184C92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DC55A2152B1F700900184C92 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					DC55A22B2B1F700C00184C92 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = DC55A2152B1F700900184C92;
+					};
+					DC55A2352B1F700C00184C92 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = DC55A2152B1F700900184C92;
+					};
+				};
+			};
+			buildConfigurationList = DC55A2112B1F700900184C92 /* Build configuration list for PBXProject "ssl-pinning" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC55A20D2B1F700900184C92;
+			packageReferences = (
+				DC55A24A2B1F71A500184C92 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = DC55A2172B1F700900184C92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC55A2152B1F700900184C92 /* ssl-pinning */,
+				DC55A22B2B1F700C00184C92 /* ssl-pinningTests */,
+				DC55A2352B1F700C00184C92 /* ssl-pinningUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC55A2142B1F700900184C92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC55A2262B1F700C00184C92 /* LaunchScreen.storyboard in Resources */,
+				DC55A2232B1F700C00184C92 /* Assets.xcassets in Resources */,
+				DC55A2212B1F700900184C92 /* Main.storyboard in Resources */,
+				DC55A2592B1F781100184C92 /* stackexchange.com.cer in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC55A22A2B1F700C00184C92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC55A2342B1F700C00184C92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC55A2122B1F700900184C92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC55A21E2B1F700900184C92 /* ViewController.swift in Sources */,
+				DC55A21A2B1F700900184C92 /* AppDelegate.swift in Sources */,
+				DC55A2522B1F73F900184C92 /* DetailViewController.swift in Sources */,
+				DC55A2542B1F740D00184C92 /* Model.swift in Sources */,
+				DC55A21C2B1F700900184C92 /* SceneDelegate.swift in Sources */,
+				DC55A24F2B1F72FE00184C92 /* NetworkClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC55A2282B1F700C00184C92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC55A2312B1F700C00184C92 /* ssl_pinningTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC55A2322B1F700C00184C92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC55A23B2B1F700C00184C92 /* ssl_pinningUITests.swift in Sources */,
+				DC55A23D2B1F700C00184C92 /* ssl_pinningUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC55A22E2B1F700C00184C92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC55A2152B1F700900184C92 /* ssl-pinning */;
+			targetProxy = DC55A22D2B1F700C00184C92 /* PBXContainerItemProxy */;
+		};
+		DC55A2382B1F700C00184C92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC55A2152B1F700900184C92 /* ssl-pinning */;
+			targetProxy = DC55A2372B1F700C00184C92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC55A21F2B1F700900184C92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC55A2202B1F700900184C92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC55A2242B1F700C00184C92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC55A2252B1F700C00184C92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC55A23E2B1F700C00184C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC55A23F2B1F700C00184C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC55A2412B1F700C00184C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ssl-pinning/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uisameer.ssl-pinning";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC55A2422B1F700C00184C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ssl-pinning/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uisameer.ssl-pinning";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC55A2442B1F700C00184C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uisameer.ssl-pinningTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ssl-pinning.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ssl-pinning";
+			};
+			name = Debug;
+		};
+		DC55A2452B1F700C00184C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uisameer.ssl-pinningTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ssl-pinning.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ssl-pinning";
+			};
+			name = Release;
+		};
+		DC55A2472B1F700C00184C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uisameer.ssl-pinningUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ssl-pinning";
+			};
+			name = Debug;
+		};
+		DC55A2482B1F700C00184C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uisameer.ssl-pinningUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ssl-pinning";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC55A2112B1F700900184C92 /* Build configuration list for PBXProject "ssl-pinning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC55A23E2B1F700C00184C92 /* Debug */,
+				DC55A23F2B1F700C00184C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC55A2402B1F700C00184C92 /* Build configuration list for PBXNativeTarget "ssl-pinning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC55A2412B1F700C00184C92 /* Debug */,
+				DC55A2422B1F700C00184C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC55A2432B1F700C00184C92 /* Build configuration list for PBXNativeTarget "ssl-pinningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC55A2442B1F700C00184C92 /* Debug */,
+				DC55A2452B1F700C00184C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC55A2462B1F700C00184C92 /* Build configuration list for PBXNativeTarget "ssl-pinningUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC55A2472B1F700C00184C92 /* Debug */,
+				DC55A2482B1F700C00184C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC55A24A2B1F71A500184C92 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC55A24B2B1F71A500184C92 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC55A24A2B1F71A500184C92 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DC55A20E2B1F700900184C92 /* Project object */;
+}
